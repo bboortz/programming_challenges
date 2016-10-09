@@ -26,5 +26,31 @@ class TestApp(object):
     def test_input_0(self):
         input = 0
         result = reverse_factorial(input)
-        assert_equal(result, 0)
-        assert_not_equal(result, -1)
+        assert_equal(result, None)
+
+    def test_input_120(self):
+        input =120 
+        result = reverse_factorial(input)
+        assert_equal(result, 5)
+
+    def test_input_150(self):
+        input =150 
+        result = reverse_factorial(input)
+        assert_equal(result, None)
+
+    def test_input_6(self):
+        input = 6 
+        result = reverse_factorial(input)
+        assert_equal(result, 3)
+
+    def test_input_18(self):
+        input = 18 
+        result = reverse_factorial(input)
+        assert_equal(result, None)
+
+    def test_input_3628800(self):
+        input = 3628800 
+        result = reverse_factorial(input)
+        assert_equal(result, 10)
+
+
